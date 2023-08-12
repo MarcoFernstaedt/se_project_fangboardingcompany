@@ -35,14 +35,14 @@
   transition: color 1s linear;
 }
 .nav__link:hover {
-  color: #2F80ED;
+  color: #2f80ed;
 }
 
 .logo {
   height: 90px;
   width: 300px;
-  background-image: url('../images/logo.svg');
-  background-repeat: none;;
+  background-image: url("../images/logo.svg");
+  background-repeat: none;
   background-size: cover;
   background-color: #000;
 }
@@ -135,3 +135,84 @@
   padding: 0;
   margin: 0;
 }
+
+/* Ahmed
+
+.about {
+  display: block;
+  padding: 20px 40px;
+}
+.about__content {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.available {
+  background-color: white;
+}
+.available__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.available__title {
+  align-self: center;
+  margin: 50px 0 100px 0;
+  max-width: 780px;
+  /* font-family: "Inter", Arial, sans-serif; */
+/* font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+} 
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 282px;
+  box-sizing: border-box;
+  border: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #cea876;
+}
+.cards__list {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 282px);
+  margin: 0;
+  padding: 0;
+  gap: 20px 17px;
+}
+.card__image {
+  height: 282px;
+  width: 282px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.card__description {
+  margin: 0px;
+  padding: 0px;
+  /* background-color: #5d4b47; */
+/* background-color: #cea876;
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card__dates {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+} */
