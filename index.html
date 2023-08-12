@@ -9,12 +9,8 @@
   <body>
     <div class="page">
       <header class="header">
-        <!-- <img
-          src="./images/FANG logo.svg"
-          alt="FANG Boarding Company logo"
-          class="logo"
-        /> -->
         <nav class="nav">
+          <div class="logo"></div>
           <ul class="nav__links">
             <li><a href="#booking" class="nav__link">Book Now</a></li>
             <li><a href="#about" class="nav__link">About Us</a></li>
@@ -24,24 +20,125 @@
         <!-- <div class="header__hero">
         <div class="hero__call-to-action"> -->
         <h1 class="header__title">
-          <span class="header__span-accent">Welcome to FANG</span>Boarding Company
+          <span class="header__span-accent">Welcome to FANG</span>Boarding
+          Company
         </h1>
-        <p class="header__description">
-          Bookings are only $25 / night
-        </p>
+        <p class="header__description">Bookings are only $25 / night</p>
         <button class="header__button">Book Now!</button>
         <!-- </div>
         </div> -->
       </header>
+      <!-- Ahmed -->
+      <!-- <main class="available">
+        <section class="available__content">
+          <h2 class="available__title">Dogs who Stay with us</h2>
+          <ul class="cards__list">
+            <template id="card-template">
+              <li class="card">
+                <img class="card__image" src="#" alt="" />
+                <div class="card__description">
+                  <h2 class="card__title"></h2>
+                  <h3 class="card__about"></h3>
+                  <div class="card__dates">
+                    <p class="card__dates-dropoff"></p>
+                    <p class="card__dates-pickup"></p>
+                  </div>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </section>
+        <section class="about">
+          <div class="about__content">
+            <p>
+              Welcome to FANG, your trusted partner in providing top-notch dog
+              boarding services for your furry companions. At FANG, we understand
+              that your dog is not just a pet, but a beloved member of your
+              family, and we are dedicated to ensuring their comfort, safety, and
+              happiness while you're away.
+            </p>
+            <p>
+              Our state-of-the-art dog boarding facility is designed with your
+              dog's well-being in mind. We offer spacious and comfortable
+              accommodations, where each dog has their own cozy sleeping area and
+              plenty of room to move around. Our climate-controlled environment
+              ensures that your dog remains comfortable regardless of the weather
+              outside. What sets us apart is our team of experienced and
+              compassionate staff members who are true dog enthusiasts.
+            </p>
+          </div>
+        </section>
+      </main> -->
       <footer class="footer">
-        <h5 class="footer__title">Contact Us</h5>        
+        <h5 class="footer__title">Contact Us</h5>
         <nav class="nav nav_footer">
           <ul class="nav__links nav__links_footer">
-            <li class="nav__item" >Email: info@FangBoardingCompany.com</li>
-            <li class="nav__item" >Phone: (123)-456-7890</li>
+            <li class="nav__item">Email: info@FangBoardingCompany.com</li>
+            <li class="nav__item">Phone: (123)-456-7890</li>
           </ul>
         </nav>
       </footer>
     </div>
+
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close" type="button"></button>
+        <h2 class="modal__title">Reserve your dog's spot</h2>
+        <form class="form reservation__form">
+          <fieldset class="form__fieldset">
+            <label for="dog-name" class="form__label">Your dog's name</label>
+            <input
+              required
+              id="dog-name"
+              class="form__input"
+              type="text"
+              placeholder="Dog name"
+            />
+            <label for="dog-breed" class="form__label">Your dog's breed</label>
+            <input
+              required
+              id="dog-breed"
+              class="form__input"
+              type="text"
+              placeholder="Dog breed"
+            />
+            <label for="drop-off">Drop-off date</label>
+            <input
+              required
+              id="drop-off"
+              class="form__input"
+              type="datetime-local"
+            />
+            <label for="pick-up">Pick-up date</label>
+            <input
+              required
+              id="pick-up"
+              class="form__input"
+              type="datetime-local"
+            />
+            <label for="dog-photo" class="form__label">Photo of your dog</label>
+            <input
+              required
+              id="dog-photo"
+              class="form__input"
+              type="url"
+              placeholder="Dog photo url"
+            />
+            <label for="dog-about" class="form__label">About your dog</label>
+            <textarea
+              required
+              id="dog-about"
+              class="form__input"
+              type="text"
+              placeholder="Anything we should know about your dog?"
+            ></textarea>
+          </fieldset>
+          <button class="form__submit" type="submit">
+            Reserve your dog's spot
+          </button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./pages/index.js"></script>
   </body>
 </html>
