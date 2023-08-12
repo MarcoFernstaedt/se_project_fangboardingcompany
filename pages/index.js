@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+import Card from "../components/Card.js";
+
 // ----- MODAL OPEN AND CLOSE ----- //
 const openModalButton = document.querySelector(".header__button");
 const reservationModal = document.querySelector(".modal");
@@ -29,11 +30,9 @@ function handleRemoteClose(evt) {
 }
 openModalButton.addEventListener("click", openReservationModal);
 closeButton.addEventListener("click", closeReservationForm);
-=======
 // import "./index.css";
 
 // Ahmed
-import Card from "../components/Card.js";
 const initialCards = [
   {
     name: "one",
@@ -61,4 +60,3 @@ initialCards.forEach((data) => {
   const card = new Card(data, "#card-template");
   cardsWrap.append(card.getView());
 });
->>>>>>> feature-cards-about
