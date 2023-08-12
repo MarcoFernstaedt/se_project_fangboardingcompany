@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  /* background-image: url("../images/FANG-Paws.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 20px; */
+}
+
+.form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  max-width: 400px;
+}
+
+.form__label {
+  margin-bottom: 5px;
+}
+
+.form__input {
+  margin-bottom: 20px;
+  max-width: 400px;
+  border-radius: 5px;
+  min-height: 30px;
+}
+
+.form__submit {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
