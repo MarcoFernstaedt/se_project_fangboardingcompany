@@ -22,6 +22,7 @@
 }
 
 .modal__content {
+  background-color: #fff;
   padding: 36px;
   border-radius: 10px;
   position: relative;
@@ -29,6 +30,11 @@
   box-sizing: border-box;
   min-width: 430px;
   transition: 0.5s linear;
+}
+
+.modal__title {
+  color: #000;
+  margin-bottom: 20px;
 }
 
 .modal__close {
@@ -40,8 +46,8 @@
   background-color: transparent;
   height: 20px;
   width: 20px;
-  top: -20px;
-  right: -20px;
+  top: -25px;
+  right: -25px;
   transition: 0.3s linear;
 }
 

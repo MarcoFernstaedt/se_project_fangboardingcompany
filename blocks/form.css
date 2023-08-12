@@ -19,6 +19,7 @@
 
 .form__label {
   margin-bottom: 5px;
+  color: #000;
 }
 
 .form__input {
@@ -26,6 +27,7 @@
   max-width: 400px;
   border-radius: 5px;
   min-height: 30px;
+  color: #000;
 }
 
 .form__submit {
@@ -35,4 +37,5 @@
   border: none;
   border-radius: 10px;
   margin-top: 10px;
+  color: #000;
 }
