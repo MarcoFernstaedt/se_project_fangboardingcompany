@@ -35,7 +35,16 @@
   transition: color 1s linear;
 }
 .nav__link:hover {
-  color: #2F80ED;
+  color: #2f80ed;
+}
+
+.logo {
+  height: 90px;
+  width: 300px;
+  background-image: url("../images/logo.svg");
+  background-repeat: none;
+  background-size: cover;
+  background-color: #000;
 }
 
 .header {

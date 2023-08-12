@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap%27");
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Serif:ital@0;1&family=Ubuntu:wght@400;700&display=swap");
+}
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+}
