@@ -1,3 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 80px 0 0;
+  width: 100%;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  column-gap: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white;
+  transition: color 1s linear;
+}
+.nav__link:hover {
+  color: #2f80ed;
+}
+
+.logo {
+  height: 500px;
+  width: 800px;
+  /* height: 90px;
+  width: 300px; */
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #fff; */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(116, 44, 44);
+}
+
+.header__title {
+  max-width: 729px;
+  margin: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.header__span-accent {
+  display: block;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+.header__description {
+  margin: 28px 0 0 80px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__button {
+  height: 60px;
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(228, 150, 6);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  border: solid 1px blue;
+}
+
+.header__paragraph {
+  margin: 0;
+  color: #6f6f6f;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 30%;
+  background-color: rgb(63, 60, 60);
+  color: white;
+  padding: 50px;
+}
+
+.footer__title {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.nav_footer {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__links_footer {
+  flex-direction: column;
+  align-items: center;
+}
 @import url(../blocks/logo.css);
 @import url(../blocks/nav.css);
 @import url(../blocks/header.css);
@@ -8,4 +142,9 @@
   padding: 0;
   box-sizing: border-box;
   color: #000;
+}
+
+.nav__item {
+  padding: 0;
+  margin: 0;
 }
