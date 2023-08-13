@@ -1,11 +1,9 @@
 import Card from "../components/Card.js";
-import Popup from "../components/Popup.js";
 import FormValidator from "../components/FormValidator.js";
+import PopupWithForm from "../components/PopupWithForm.js";
 
 // ----- MODAL OPEN AND CLOSE ----- //
-const reservationPopup = new Popup({
-  popupSelector: "#modal__reservation-form",
-});
+const reservationPopup = new PopupWithForm("#modal__reservation-form");
 reservationPopup.setEventListeners();
 const openModalButton = document.querySelector(".header__button");
 openModalButton.addEventListener("click", () => {
