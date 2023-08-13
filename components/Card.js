@@ -3,8 +3,6 @@ export default class Card {
     this._name = data.name;
     this._breed = data.breed;
     this._dropOffDate = data.dropOffDate;
-    console.log(data.pickUpDate);
-    console.log(data.dropOffDate);
     this._pickUpDate = data.pickUpDate;
     this._link = data.link;
     this._about = data.about;
@@ -19,8 +17,6 @@ export default class Card {
       ".card__dates-dropoff"
     );
     this._pickUpDateHolder = this._element.querySelector(".card__dates-pickup");
-    console.log(this._dropOffDateHolder);
-    console.log(this._pickUpDateHolder);
   }
 
   _setCardView() {
