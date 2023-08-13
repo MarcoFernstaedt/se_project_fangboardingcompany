@@ -3,11 +3,17 @@ import FormValidator from "../components/FormValidator.js";
 import PopupWithForm from "../components/PopupWithForm.js";
 
 // ----- MODAL OPEN AND CLOSE ----- //
-const reservationPopup = new PopupWithForm("#modal__reservation-form");
+const reservationPopup = new PopupWithForm(
+  "#modal__reservation-form",
+  (data) => {
+    console.log(data);
+  }
+);
 reservationPopup.setEventListeners();
 const openModalButton = document.querySelector(".header__button");
 openModalButton.addEventListener("click", () => {
   reservationPopup.open();
+  reservationFormValidator.resetValidation();
 });
 
 // ----- FORM VALIDATION ----- //
