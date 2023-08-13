@@ -1,0 +1,11 @@
+.about {
+  display: block;
+  padding: 20px 40px;
+}
+.about__content {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
