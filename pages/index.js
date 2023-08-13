@@ -1,35 +1,16 @@
 import Card from "../components/Card.js";
+import Popup from "../components/Popup.js";
 
 // ----- MODAL OPEN AND CLOSE ----- //
+const reservationPopup = new Popup({
+  popupSelector: "#modal__reservation-form",
+});
+reservationPopup.setEventListeners();
 const openModalButton = document.querySelector(".header__button");
-const reservationModal = document.querySelector(".modal");
-const closeButton = document.querySelector(".modal__close");
+openModalButton.addEventListener("click", () => {
+  reservationPopup.open();
+});
 
-function openReservationModal() {
-  reservationModal.classList.add("modal_opened");
-  reservationModal.addEventListener("click", handleRemoteClose);
-  document.addEventListener("keydown", handleEscClose);
-}
-
-function closeReservationForm() {
-  reservationModal.classList.remove("modal_opened");
-  reservationModal.removeEventListener("click", handleRemoteClose);
-  document.removeEventListener("keydown", handleEscClose);
-}
-
-function handleEscClose(evt) {
-  if (evt.key === "Escape") {
-    closeReservationForm();
-  }
-}
-
-function handleRemoteClose(evt) {
-  if (evt.target.classList.contains("modal")) {
-    closeReservationForm();
-  }
-}
-openModalButton.addEventListener("click", openReservationModal);
-closeButton.addEventListener("click", closeReservationForm);
 // import "./index.css";
 
 // Ahmed
