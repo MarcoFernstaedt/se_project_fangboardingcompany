@@ -22,6 +22,10 @@
 
 .modal__content {
   background-color: #fff;
+  background-image: url("../images/background_paws_transparent.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -100px;
   padding: 36px;
   border-radius: 10px;
   position: relative;

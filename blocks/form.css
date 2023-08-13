@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  /* background-image: url("../images/FANG-Paws.png");
+  /* background-image: url("../images/background_paws_transparent.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 20px; */
+  background-position: -80px; */
+  /* padding: 0 20px; */
 }
 
 .form__fieldset {
