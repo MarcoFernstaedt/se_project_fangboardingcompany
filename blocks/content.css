@@ -1,0 +1,18 @@
+.content {
+  background-color: white;
+}
+.content__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content__title {
+  align-self: center;
+  margin: 50px 0 100px 0;
+  max-width: 780px;
+  /* font-family: "Inter", Arial, sans-serif; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
