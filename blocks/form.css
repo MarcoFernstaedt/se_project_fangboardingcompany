@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  /* background-image: url("../images/FANG-Paws.png");
+  /* background-image: url("../images/background_paws_transparent.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 20px; */
+  background-position: -80px; */
+  /* padding: 0 20px; */
 }
 
 .form__fieldset {
@@ -23,11 +24,17 @@
 }
 
 .form__input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   max-width: 400px;
   width: 100%;
-  border-radius: 5px;
   min-height: 30px;
   color: #000;
+}
+
+.form__input_type_error {
+  border-bottom: 1px solid red;
 }
 
 .form__submit {
@@ -56,7 +63,6 @@
   position: absolute;
   top: 43px;
   color: red;
-  font-family: "inter", sans-serif;
   font-size: 12px;
   line-height: 14px;
   display: block;

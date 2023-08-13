@@ -3,6 +3,9 @@ import FormValidator from "../components/FormValidator.js";
 import PopupWithForm from "../components/PopupWithForm.js";
 
 // initial cards
+// import "./index.css";
+
+// Ahmed
 const initialCards = [
   {
     name: "one",
