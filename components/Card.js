@@ -27,11 +27,7 @@ export default class Card {
     this._cardImage.src = this._link;
     this._cardImage.alt = this._name;
     this._cardTitle.textContent = this._name;
-    console.log(this._about);
     this._cardAbout.textContent = this._about;
-    console.log(this._dropOffDate);
-    // console.log(this._dropOffDate);
-    // console.log(this._pickUpDate);
     this._dropOffDateHolder.textContent = this._dropOffDate;
     this._pickUpDateHolder.textContent = this._pickUpDate;
   }

@@ -42,7 +42,6 @@ const cardTemplate = document
   .content.querySelector(".card");
 
 const createCard = (data) => {
-  console.log(data);
   const card = new Card(data, "#card-template");
   cardsWrap.append(card.getView());
 };
