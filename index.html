@@ -112,54 +112,78 @@
       <div class="modal__content">
         <button class="modal__close" type="button"></button>
         <h2 class="modal__title">Reserve your dog's spot</h2>
-        <form class="form reservation__form">
+        <form class="form reservation__form" name="reservation__form">
           <fieldset class="form__fieldset">
             <label for="dog-name" class="form__label">Your dog's name</label>
-            <input
-              required
-              id="dog-name"
-              class="form__input"
-              type="text"
-              placeholder="Dog name"
-            />
+            <div class="form__input-wrapper">
+              <input
+                required
+                name="name"
+                id="dog-name"
+                class="form__input"
+                type="text"
+                placeholder="Dog name"
+              />
+              <span class="form__error" id="dog-name-error"></span>
+            </div>
             <label for="dog-breed" class="form__label">Your dog's breed</label>
-            <input
-              required
-              id="dog-breed"
-              class="form__input"
-              type="text"
-              placeholder="Dog breed"
-            />
+            <div class="form__input-wrapper">
+              <input
+                required
+                name="breed"
+                id="dog-breed"
+                class="form__input"
+                type="text"
+                placeholder="Dog breed"
+              />
+              <span class="form__error" id="dog-breed-error"></span>
+            </div>
             <label for="drop-off">Drop-off date</label>
-            <input
-              required
-              id="drop-off"
-              class="form__input"
-              type="datetime-local"
-            />
+            <div class="form__input-wrapper">
+              <input
+                required
+                name="dropOffDate"
+                id="drop-off"
+                class="form__input"
+                type="datetime-local"
+              />
+              <span class="form__error" id="drop-off-error"></span>
+            </div>
             <label for="pick-up">Pick-up date</label>
-            <input
-              required
-              id="pick-up"
-              class="form__input"
-              type="datetime-local"
-            />
+            <div class="form__input-wrapper">
+              <input
+                required
+                name="pickUpDate"
+                id="pick-up"
+                class="form__input"
+                type="datetime-local"
+              />
+              <span class="form__error" id="pick-up-error"></span>
+            </div>
             <label for="dog-photo" class="form__label">Photo of your dog</label>
-            <input
-              required
-              id="dog-photo"
-              class="form__input"
-              type="url"
-              placeholder="Dog photo url"
-            />
+            <div class="form__input-wrapper">
+              <input
+                required
+                name="link"
+                id="dog-photo"
+                class="form__input"
+                type="url"
+                placeholder="Dog photo url"
+              />
+              <span class="form__error" id="dog-photo-error"></span>
+            </div>
             <label for="dog-about" class="form__label">About your dog</label>
-            <textarea
-              required
-              id="dog-about"
-              class="form__input"
-              type="text"
-              placeholder="Anything we should know about your dog?"
-            ></textarea>
+            <div class="form__input-wrapper">
+              <textarea
+                required
+                name="about"
+                id="dog-about"
+                class="form__input"
+                type="text"
+                placeholder="Anything we should know about your dog?"
+              ></textarea>
+              <span class="form__error" id="dog-about-error"></span>
+            </div>
           </fieldset>
           <button class="form__submit" type="submit">
             Reserve your dog's spot

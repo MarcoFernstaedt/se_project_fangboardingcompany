@@ -23,8 +23,8 @@
 }
 
 .form__input {
-  margin-bottom: 20px;
   max-width: 400px;
+  width: 100%;
   border-radius: 5px;
   min-height: 30px;
   color: #000;
@@ -39,4 +39,25 @@
   margin-top: 10px;
   color: #000;
   cursor: pointer;
+}
+
+.form__submit_disabled {
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray;
+}
+
+.form__input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.form__error_visible {
+  position: absolute;
+  top: 43px;
+  color: red;
+  font-family: "inter", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
 }
