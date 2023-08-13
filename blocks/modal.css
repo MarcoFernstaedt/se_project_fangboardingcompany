@@ -33,7 +33,7 @@
 
 .modal__title {
   color: #000;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 .modal__close {
