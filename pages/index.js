@@ -61,6 +61,7 @@ reservationPopup.setEventListeners();
 const openModalButton = document.querySelector(".header__button");
 openModalButton.addEventListener("click", () => {
   reservationPopup.open();
+  reservationFormValidator.resetValidation();
 });
 
 // ----- FORM VALIDATION ----- //
